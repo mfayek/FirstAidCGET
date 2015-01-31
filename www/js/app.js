@@ -24,7 +24,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
     .state('tabs', {
       url: "/tab",
       abstract: true,
-      templateUrl: "templates/tabs.html"
+      templateUrl: "templates/tabs.html",
     })
     
     
@@ -51,7 +51,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
       url: "/whatisfirstaid",
       views: {
         'home-tab': {
-          templateUrl: "templates/whatisfirstaid.html"
+          templateUrl: "templates/whatisfirstaid.html",
         }
       }
     })
@@ -80,7 +80,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
       url: "/definitions",
       views: {
         'home-tab': {
-          templateUrl: "templates/definitions.html"
+          templateUrl: "templates/definitions.html",
         }
       }
     })
@@ -89,7 +89,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
       url: "/videos",
       views: {
         'home-tab': {
-          templateUrl: "templates/videos.html"
+          templateUrl: "templates/videos.html",
         }
       }
     })
@@ -135,7 +135,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
       url: "/breathingemergenciessub",
       views: {
           'emergencies-tab':{
-              templateUrl: "templates/breathingemergenciessub.html"
+              templateUrl: "templates/breathingemergenciessub.html",
           }
       }
   })
@@ -145,7 +145,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
       url: "/adultchoking",
       views: {
         'emergencies-tab': {
-            templateUrl: "templates/adultchoking.html"
+            templateUrl: "templates/adultchoking.html",
             
         }
       }
@@ -155,7 +155,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
       url: "/infantchoking",
       views: {
         'emergencies-tab': {
-            templateUrl: "templates/infantchoking.html"
+            templateUrl: "templates/infantchoking.html",
         }
       }
     })
@@ -249,22 +249,21 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
 
 myApp.config(function($ionicConfigProvider) {
   $ionicConfigProvider.tabs.position('bottom'); //other values: top
-  $ionicConfigProvider.views.maxCache(0);
-  
+$ionicConfigProvider.views.maxCache(0);
+    
 })
-
 
 myApp.controller('EmergenciesCtrl', function($ionicHistory){
   $ionicHistory.clearHistory();
 })
 
-
 myApp.controller('AboutCtrl', function($ionicHistory){
   $ionicHistory.clearHistory();
 })
 
-myApp.controller('HomeTabCtrl', function($scope) {
+myApp.controller('HomeTabCtrl', function($scope,$ionicHistory) {
   console.log('HomeTabCtrl');
+     $ionicHistory.clearHistory();
 });
   
 
