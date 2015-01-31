@@ -261,12 +261,7 @@ myApp.controller('AboutCtrl', function($ionicHistory){
   $ionicHistory.clearHistory();
 });
 
-myApp.controller('HomeTabCtrl', function($scope,$ionicHistory,$ionicSlideBoxDelegate) {
+myApp.controller('HomeTabCtrl', function($scope,$ionicHistory) {
   
     $ionicHistory.clearHistory();
-    
-    $scope.nextSlide = function() {
-        $ionicSlideBoxDelegate.next();
-    };
-    
 });
