@@ -16,7 +16,7 @@ myApp.run(function ($ionicPlatform) {
       StatusBar.styleDefault();
     }
   });
-})
+});
 
 myApp.config(function($stateProvider, $urlRouterProvider) {
 
@@ -245,25 +245,28 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
 
    $urlRouterProvider.otherwise("/tab/home");
 
-})
+});
 
 myApp.config(function($ionicConfigProvider) {
   $ionicConfigProvider.tabs.position('bottom'); //other values: top
 $ionicConfigProvider.views.maxCache(0);
     
-})
+});
 
 myApp.controller('EmergenciesCtrl', function($ionicHistory){
   $ionicHistory.clearHistory();
-})
+});
 
 myApp.controller('AboutCtrl', function($ionicHistory){
   $ionicHistory.clearHistory();
-})
-
-myApp.controller('HomeTabCtrl', function($scope,$ionicHistory) {
-  console.log('HomeTabCtrl');
-     $ionicHistory.clearHistory();
 });
-  
 
+myApp.controller('HomeTabCtrl', function($scope,$ionicHistory,$ionicSlideBoxDelegate) {
+  
+    $ionicHistory.clearHistory();
+    
+    $scope.nextSlide = function() {
+        $ionicSlideBoxDelegate.next();
+    };
+    
+});
