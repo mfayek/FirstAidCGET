@@ -27,8 +27,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
       templateUrl: "templates/tabs.html",
     })
     
-    
-  .state('tabs.home', {
+    .state('tabs.home', {
       url: "/home",
       views: {
         'home-tab': {
@@ -38,11 +37,21 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
       }
     })
   
+  
      .state('tabs.warning', {
       url: "/warning",
       views: {
         'home-tab': {
           templateUrl: "templates/warning.html",
+        }
+      }
+    })
+  
+    .state('tabs.warningfr', {
+      url: "/warningfr",
+      views: {
+        'home-tab': {
+          templateUrl: "templates/warningfr.html",
         }
       }
     })
