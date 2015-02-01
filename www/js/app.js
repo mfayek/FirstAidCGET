@@ -19,7 +19,7 @@ myApp.run(function ($ionicPlatform) {
 });
 
 myApp.config(function($stateProvider, $urlRouterProvider) {
-
+    
   $stateProvider
     .state('tabs', {
       url: "/tab",
@@ -274,3 +274,4 @@ myApp.controller('HomeTabCtrl', function($scope,$ionicHistory) {
   
     $ionicHistory.clearHistory();
 });
+
