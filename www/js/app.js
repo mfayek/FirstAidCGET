@@ -37,6 +37,15 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
       }
     })
   
+    .state('tabs.abc', {
+      url: "/abc",
+      views: {
+        'home-tab': {
+          templateUrl: "templates/abc.html",
+        }
+      }
+    })
+  
   
      .state('tabs.warning', {
       url: "/warning",
