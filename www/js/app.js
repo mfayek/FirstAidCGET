@@ -37,6 +37,18 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
       }
     })
   
+  // French
+  
+    .state('tabs.homefr', {
+      url: "/homefr",
+      views: {
+        'home-tab': {
+          templateUrl: "templates/fr/homefr.html",
+          controller: 'HomeTabCtrl'
+        }
+      }
+    })
+  
     .state('tabs.abc', {
       url: "/abc",
       views: {
@@ -46,6 +58,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
       }
     })
   
+  // Warning view
   
      .state('tabs.warning', {
       url: "/warning",
@@ -56,15 +69,19 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
       }
     })
   
+  // French
+  
     .state('tabs.warningfr', {
       url: "/warningfr",
       views: {
         'home-tab': {
-          templateUrl: "templates/warningfr.html",
+          templateUrl: "templates/fr/warningfr.html",
         }
       }
     })
     
+  // What is first aid view 
+  
     .state('tabs.whatisfirstaid', {
       url: "/whatisfirstaid",
       views: {
@@ -73,7 +90,20 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
         }
       }
     })
-    
+  
+  // French
+  
+  .state('tabs.whatisfirstaidfr', {
+      url: "/whatisfirstaidfr",
+      views: {
+        'home-tab': {
+          templateUrl: "templates/fr/whatisfirstaidfr.html",
+        }
+      }
+    })
+
+
+  // Good Samaritan view
   
   .state('tabs.goodsamaritan',{
       url: "/goodsamaritan",
@@ -84,6 +114,19 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
       }
   })
   
+  // French
+  
+  .state('tabs.goodsamaritanfr',{
+      url: "/goodsamaritanfr",
+      views:{
+          'home-tab':{
+              templateUrl: "templates/fr/goodsamaritanfr.html",
+          }
+      }
+  })
+  
+  // How will i react view
+  
   .state('tabs.howwillireact',{
       url: "/howwillireact",
       views:{
@@ -92,6 +135,18 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
           }
       }
   })
+  
+  // French
+  
+  .state('tabs.howwillireactfr',{
+      url: "/howwillireactfr",
+      views:{
+          'home-tab':{
+              templateUrl: "templates/fr/howwillireactfr.html",
+          }
+      }
+  })
+  
   
     .state('tabs.definitions', {
       
@@ -270,17 +325,3 @@ myApp.config(function($ionicConfigProvider) {
 $ionicConfigProvider.views.maxCache(0);
     
 });
-
-myApp.controller('EmergenciesCtrl', function($ionicHistory){
-  $ionicHistory.clearHistory();
-});
-
-myApp.controller('AboutCtrl', function($ionicHistory){
-  $ionicHistory.clearHistory();
-});
-
-myApp.controller('HomeTabCtrl', function($scope,$ionicHistory) {
-  
-    $ionicHistory.clearHistory();
-});
-
