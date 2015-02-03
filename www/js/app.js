@@ -25,6 +25,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
       url: "/tab",
       abstract: true,
       templateUrl: "templates/tabs.html",
+        controller: 'HomeTabCtrl'
     })
     
     .state('tabs.home', {
@@ -166,12 +167,26 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
         }
       }
     })
-    
+  
+  //Emergencies view
+  
     .state('tabs.emergencies', {
       url: "/emergencies",
       views: {
         'emergencies-tab': {
           templateUrl: "templates/emergencies.html",
+          controller: 'EmergenciesCtrl'
+        }
+      }
+    })
+  
+  // French
+  
+    .state('tabs.emergenciesfr', {
+      url: "/emergenciesfr",
+      views: {
+        'emergencies-tab': {
+          templateUrl: "templates/fr/emergenciesfr.html",
           controller: 'EmergenciesCtrl'
         }
       }

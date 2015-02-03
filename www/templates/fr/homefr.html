@@ -1,7 +1,17 @@
 <ion-view view-title="First Aid by CGET">
-          
         <ion-content >
-          
+            
+            <!-- Header bar for language change / Padding isn't working, therefore using br instead--> 
+            
+            <ion-header-bar class="bar bar-header bar-light">
+                    <a class="button icon ion-earth button-light" style="color:#CC0000;" href="#tab/home"> EN </a>
+            </ion-header-bar>
+            
+            <br/>
+            <br/>
+            
+            <!-- Home page banner slidebox --> 
+            
            <div class="card">
                 <ion-slide-box auto-play="true" does-continue="true" show-pager="false">
                         <ion-slide>
@@ -14,9 +24,10 @@
                 </ion-slide-box>
             </div>
             
-        
-          <ion-list class="card">
+            <!-- Menu options --> 
             
+          <ion-list class="card">
+              
             <ion-item class="item-icon-right" href="#/tab/warningfr">Avertissement
                 
                 <i class="icon ion-alert"></i>
@@ -48,11 +59,7 @@
                 
             </ion-item>   
         
-            <ion-item class="item-icon-right" href="#tab/home" >English
             
-                <i class="icon ion-earth"></i>
-            
-            </ion-item>
         <!--
             <ion-item class="item-icon-right" href="#/tab/videos">Videos
             
@@ -62,7 +69,10 @@
          -->
          </ion-list>
         
-      
+      <div class="text-center">
+            
+            
+            </div>
             
         </ion-content>
       </ion-view>
