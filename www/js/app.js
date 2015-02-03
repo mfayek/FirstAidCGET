@@ -148,6 +148,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
       }
   })
   
+  // Definitions view
   
     .state('tabs.definitions', {
       
@@ -158,6 +159,20 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
         }
       }
     })
+  
+  // French
+  
+  .state('tabs.definitionsfr', {
+      
+      url: "/definitionsfr",
+      views: {
+        'home-tab': {
+          templateUrl: "templates/fr/definitionsfr.html",
+        }
+      }
+    })
+  
+  // Video list view
    
     .state('tabs.videos', {
       url: "/videos",
