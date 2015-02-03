@@ -192,6 +192,8 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
       }
     })
   
+  // Asthma view
+  
     .state('tabs.asthma',{
       url: "/asthma",
       views: {
@@ -200,6 +202,19 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
           }
       }
   })
+  
+  // French
+  
+    .state('tabs.asthmafr',{
+      url: "/asthmafr",
+      views: {
+          'emergencies-tab':{
+              templateUrl: "templates/fr/asthmafr.html",
+          }
+      }
+  })
+  
+  // Bleeding view
   
     .state('tabs.bleeding',{
       url: "/bleeding",
@@ -210,6 +225,19 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
       }
   })
   
+  // French
+  
+  .state('tabs.bleedingfr',{
+      url: "/bleedingfr",
+      views:{
+          'emergencies-tab':{
+              templateUrl: "templates/fr/bleedingfr.html",
+          }
+      }
+  })
+  
+  //Bone and Joint Injuries view
+  
     .state('tabs.boneandjointinjuries',{
       url: "/boneandjointinjuries",
       views:{
@@ -218,6 +246,19 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
           }
       }
   })
+  
+  //French
+  
+    .state('tabs.boneandjointinjuriesfr',{
+      url: "/boneandjointinjuriesfr",
+      views:{
+          'emergencies-tab':{
+              templateUrl: "templates/fr/bonejointinjuriesfr.html",
+          }
+      }
+  })
+  
+  // Breathing Emergencies sub menu view
   
   .state('tabs.breathingemergenciessub',{
       url: "/breathingemergenciessub",
@@ -228,7 +269,19 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
       }
   })
   
-
+  // French
+  
+  .state('tabs.breathingemergenciessubfr',{
+      url: "/breathingemergenciessubfr",
+      views: {
+          'emergencies-tab':{
+              templateUrl: "templates/fr/breathingemergenciessubfr.html",
+          }
+      }
+  })
+  
+  // Adult Choking view
+  
     .state('tabs.adultchoking', {
       url: "/adultchoking",
       views: {
@@ -239,6 +292,20 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
       }
     })
   
+  // French
+  
+    .state('tabs.adultchokingfr', {
+      url: "/adultchokingfr",
+      views: {
+        'emergencies-tab': {
+            templateUrl: "templates/fr/adultchokingfr.html",
+            
+        }
+      }
+    })
+  
+  // Infant Choking view
+  
     .state('tabs.infantchoking', {
       url: "/infantchoking",
       views: {
@@ -247,6 +314,19 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
         }
       }
     })
+  
+  // French
+  
+    .state('tabs.infantchokingfr', {
+      url: "/infantchokingfr",
+      views: {
+        'emergencies-tab': {
+            templateUrl: "templates/fr/infantchokingfr.html",
+        }
+      }
+    })
+  
+  // Burns view
   
   .state('tabs.burns',{
       url: "/burns",
@@ -257,6 +337,19 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
       }
   })
   
+  // French
+  
+  .state('tabs.burnsfr',{
+      url: "/burnsfr",
+      views:{
+          'emergencies-tab':{
+              templateUrl: "templates/fr/burnsfr.html",
+          }
+      }
+  })
+  
+  // CPR view
+  
   .state('tabs.cpr',{
       url: "/cpr",
       views:{
@@ -265,6 +358,19 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
           }
       }
   })
+  
+  // French
+  
+  .state('tabs.cprfr',{
+      url: "/cprfr",
+      views:{
+          'emergencies-tab':{
+              templateUrl: "templates/fr/cprfr.html",
+          }
+      }
+  })
+  
+  // Diabetes view
   
   .state('tabs.diabetes',{
       url: "/diabetes",
@@ -275,6 +381,19 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
       }
   })
   
+  // French
+  
+  .state('tabs.diabetesfr',{
+      url: "/diabetesfr",
+      views:{
+          'emergencies-tab':{
+              templateUrl: "templates/fr/diabetesfr.html",
+          }
+      }
+  })
+  
+  // Heart Attack view
+  
   .state('tabs.heartattack',{
       url: "/heartattack",
       views:{
@@ -283,6 +402,19 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
           }
       }
   })
+  
+  // French
+  
+  .state('tabs.heartattackfr',{
+      url: "/heartattackfr",
+      views:{
+          'emergencies-tab':{
+              templateUrl: "templates/fr/heartattackfr.html",
+          }
+      }
+  })
+  
+  // Seizures view
   
   .state('tabs.seizures',{
       url: "/seizures",
@@ -293,6 +425,19 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
       }
   })
   
+  // French
+  
+  .state('tabs.seizuresfr',{
+      url: "/seizuresfr",
+      views:{
+          'emergencies-tab':{
+              templateUrl: "templates/fr/seizuresfr.html",
+          }
+      }
+  })
+  
+  // Severe Allergic reactions
+  
   .state('tabs.severeallergicreactions',{
       url: "/severeallergicreactions",
       views:{
@@ -301,6 +446,19 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
           }
       }
   })
+  
+  // French
+  
+  .state('tabs.severeallergicreactionsfr',{
+      url: "/severeallergicreactionsfr",
+      views:{
+          'emergencies-tab':{
+              templateUrl: "templates/fr/severeallergicreactionsfr.html",
+          }
+      }
+  })
+  
+  // Shock view
   
   .state('tabs.shock',{
       url: "/shock",
@@ -311,11 +469,35 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
       }
   })
   
+  // French
+  
+  .state('tabs.shockfr',{
+      url: "/shockfr",
+      views:{
+          'emergencies-tab':{
+              templateUrl: "templates/fr/shockfr.html",
+          }
+      }
+  })
+  
+  // Strokes view
+  
   .state('tabs.strokes',{
       url: "/strokes",
       views:{
           'emergencies-tab':{
               templateUrl: "templates/strokes.html",
+          }
+      }
+  })
+  
+  // French
+  
+  .state('tabs.strokesfr',{
+      url: "/strokesfr",
+      views:{
+          'emergencies-tab':{
+              templateUrl: "templates/fr/strokesfr.html",
           }
       }
   })

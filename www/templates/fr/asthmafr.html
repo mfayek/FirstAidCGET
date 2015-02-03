@@ -1,0 +1,98 @@
+<ion-view view-title="Asthme" >
+    
+    <ion-content>
+        
+        <div class = "card">
+        
+                <div class="item item-thumbnail-left item-text-wrap">
+                    <img src="img/asthmaavatar.PNG">
+                    <p>Le terme «asthme» provient du mot grec qui veut dire «haleter» ce qui décrit
+                        bien la personne qui essaie de trouver son souffle. L'asthme se compare aussi
+                        a une maladie d'hypersensibilité semblable aux réactions allergiques. On note
+                        que les voies respiratoires (bronches, bronchioles et trachée) réagissent plus
+                        facilement à des stimuli environnementaux.</p>
+            
+                </div>
+        </div>
+            
+                <div class = "card">
+            
+                    <div class = "item item-divider item-text-wrap text-center card-divider">
+                        Signes et symptômes d’une crise d’asthme
+                    </div>
+                    
+                    <div class="item item-text-wrap">
+                    
+                        <div class ="row">
+                            <div class="col"><p>• Difficulté respiratoire subite et progressive</p></div>
+                            <div class="col"><p>• Respiration bruyante avec sifflements</p></div>
+                        </div>
+
+                         <div class ="row">
+                            <div class="col"><p>• Utilisation des muscles accessoires pour respirer</p></div>
+                            <div class="col"><p>• Faiblesse et épuisement</p></div>
+                        </div>
+
+                        <div class ="row">
+                            <div class="col"><p>• Teint bleuâtre des lèvres	</p></div>
+                            <div class="col"><p>• Respiration rapide </p></div>
+                        </div>
+
+                        <div class ="row">
+                            <div class="col"><p>• Peau moite et pâle up</p></div>
+                            <div class="col"><p>• Anxiété et peur</p></div>
+                        </div>
+                    
+                    </div>   
+                   
+                </div>
+        
+        <!-- Astham with without an Inhaler section --> 
+        
+            <div class = "card" > 
+        
+                <div class="item item-divider item-text-wrap text-center card-divider" ng-init="showSteps1=false">
+                  <a href="" ng-click="showSteps1=!showSteps1"><i class="icon ion-chevron-down white" style="float:left;" ></i></a>Premiers soins(sans la pompe d’asthme)
+
+                </div>
+               
+                    <div class="item item-text-wrap" ng-show="showSteps1">
+
+                        <p>1. Appelez le 911.</p><br/>
+                        <p>2. Évaluez la personne.</p><br/>
+                        <p>3. Faites asseoir la personne dans une position confortable et rassurez-la.</p><br/>
+                        <p>4. Controlez la respiration.(Faites inspirer la personne par le nez et expirer par la bouche).</p><br/>
+                        <p>5. Traitez l'état de choc.</p><br/>
+                        
+                    </div>
+                  
+              
+                
+            </div>
+        
+        <!-- Astham with Inhaler section --> 
+        
+            <div class = "card">
+        
+                <div class="item item-divider item-text-wrap text-center card-divider" ng-init="showSteps2=false">
+                <a href="" ng-click="showSteps2=!showSteps2"><i class="icon ion-chevron-down white" style="float:left;" ></i></a>Premiers soins (avec la pompe d’asthme)
+
+                </div>
+                
+                <div class="item item-text-wrap" ng-show="showSteps2">
+                    
+                    <img src="img/asthmaavatar1.PNG" class="image-card padding-left padding-bottom" style="float:right;">
+                    <p>1. Secouez l’inhalateur et faites un essai pour expulser les poussières.</p><br/>                    
+                    <p>2. Demandez à la personne d'expirer doucement et complètement.</p><br/>
+                    <p>3. Demandez à la personne de prendre une grande inspiration pendant qu’elle appuit sur l’inhalateur pour administrer le médicament.</p><br/>
+                    <img src="img/asthmaavatar2.PNG" class="image-card padding-left padding-bottom" style="float:right;">
+                    <p>4. Si la personne est capable, demander lui de retenir son souffle pendant 5 à 10 secondes pour permettre au médicament de bien s'infiltrer dans les poumons.</p><br/>
+                    <p>5. Si la crise d’asthme continue, appelez le 911.</p>
+                
+                </div>
+        
+            </div>
+        
+        
+        
+       
