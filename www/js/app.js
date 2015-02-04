@@ -50,11 +50,24 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
       }
     })
   
+  //ABC View
+  
     .state('tabs.abc', {
       url: "/abc",
       views: {
         'home-tab': {
           templateUrl: "templates/abc.html",
+        }
+      }
+    })
+  
+  // French
+  
+    .state('tabs.abcfr', {
+      url: "/abcfr",
+      views: {
+        'home-tab': {
+          templateUrl: "templates/fr/abcfr.html",
         }
       }
     })
