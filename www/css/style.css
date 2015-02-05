@@ -4,6 +4,10 @@ h2.subtitle {
     font-weight: bold;
 }
 
+.no-border {
+    border: none;
+}
+
 .icon-header {
     width: 40px;
     height: 38px;
