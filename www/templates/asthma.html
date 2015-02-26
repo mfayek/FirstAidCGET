@@ -4,12 +4,9 @@
         
         <div class = "card">
         
-                <div class="item item-thumbnail-left item-text-wrap">
-                    <img src="img/asthmaavatar.PNG">
-                    <p>Asthma is called Reactive Airway Disease (R.A.D.) and results from an increased
-                    sensitivity of the trachea, bronchi and bronchioles to any number of stimuli. This
-                    airway reaction causes a narrowing, inflammation and production of mucus in the
-                    affected airways.
+                <div class="item item-text-wrap">
+                    <img src="img/asthmaavatar.PNG" class="image-card padding-right padding-bottom" style="float:left;">
+                    <p>Asthma is called Reactive Airway Disease (R.A.D.) and results from an increased sensitivity of the trachea, bronchi and bronchioles to any number of stimuli. This airway reaction causes a narrowing, inflammation and production of mucus in the affected airways.
                     </p>
             
                 </div>
@@ -52,48 +49,50 @@
                    
                 </div>
         
+         <a href="" ng-click="jobClick1(showSteps1=!showSteps1)" style="text-decoration: none;">
             <div class = "card" > 
         
-                <div class="item item-divider item-text-wrap text-center card-divider" ng-init="showSteps1=false">
-                  <a href="" ng-click="showSteps1=!showSteps1"><i class="icon ion-chevron-down white" style="float:left;" ></i></a>First Aid for Asthma Emergencies (without an inhaler)
+                <div class="item item-divider item-text-wrap text-center card-divider">
+                  <i class="icon ion-chevron-{{arrow}} white" style="float:left;" ></i>
+                <span style="color:white;">First Aid for Asthma Emergencies (without an inhaler)</span>
+                
                 </div>
-                
-               
-                    <div class="item item-text-wrap" ng-show="showSteps1">
+                    
+                <div class="item item-text-wrap" ng-show="showSteps1">
 
-                        <p>1. Ask the person to sit in a position that is the most comfortable for them and make sure stop all activities</p><br/>
-                        <p>2. Ask the person to inhale by the nose, and exhale by the mouth (Pursed lip breathing)</p><br/>
-                        <p>3. Treat for shock and check for medical bracelet </p><br/>
+                        <p><span class="number">1</span> Ask the person to sit in a position that is the most comfortable for them and make sure stop all activities</p><br/>
+                        <p><span class="number">2</span> Ask the person to inhale by the nose, and exhale by the mouth (Pursed lip breathing)</p><br/>
+                        <p><span class="number">3</span> Treat for shock and check for medical bracelet </p><br/>
 
-                    </div>
-                  
-              
-                
+                </div>
+    
             </div>
+        </a>
         
+        <a href="" ng-click="jobClick2(showSteps2=!showSteps2)" style="text-decoration: none;">
             <div class = "card">
-        
-                <div class="item item-divider item-text-wrap text-center card-divider" ng-init="showSteps2=false">
-                <a href="" ng-click="showSteps2=!showSteps2"><i class="icon ion-chevron-down white" style="float:left;" ></i></a>First Aid for Asthma (with an inhaler)
+                
+                <div class="item item-divider item-text-wrap text-center card-divider">
+                    <i class="icon ion-chevron-{{arrow2}} white" style="float:left;" ></i><span style="color:white;" >First Aid for Asthma (with an inhaler)</span>
+                
                 </div>
                 
                 <div class="item item-text-wrap" ng-show="showSteps2">
                     
                     <img src="img/asthmaavatar1.PNG" class="image-card padding-left padding-bottom" style="float:right;">
-                    <p>1. Shake the inhaler (puffer) and test to make sure any dust particles are expelled</p><br/>                    
+                    <p><span class="number">1</span> Shake the inhaler (puffer) and test to make sure any dust particles are expelled</p><br/>                    
                     
-                    <p>2. Ask the person to quietly breathe out completely</p><br/>
-                    <p>3. Ask the person to <b>breathe in as they press the inhaler</b> to release the medication </p><br/>
+                    <p><span class="number">2</span> Ask the person to quietly breathe out completely</p><br/>
+                    <p><span class="number">3</span> Ask the person to <b>breathe in as they press the inhaler</b> to release the medication </p><br/>
                     <img src="img/asthmaavatar2.PNG" class="image-card padding-left padding-bottom" style="float:right;">
-                    <p>4. Ask the person to hold their breath for about 5 seconds so the drug can spread into the lungs </p><br/>
+                    <p><span class="number">4</span> Ask the person to hold their breath for about 5 seconds so the drug can spread into the lungs </p><br/>
                     
-                    <p>5. If the asthma attack persists, call 911 </p>
+                    <p><span class="number">5</span> If the asthma attack persists, call 911 </p>
                     
-
                 </div>
         
             </div>
-        
+        </a>
         
         
        

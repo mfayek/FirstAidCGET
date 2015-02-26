@@ -28,6 +28,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
         controller: 'HomeTabCtrl'
     })
     
+  // Home tab View
     .state('tabs.home', {
       url: "/home",
       views: {
@@ -72,24 +73,25 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
       }
     })
   
-  // Warning view
+  // Terms and Use view
   
      .state('tabs.warning', {
       url: "/warning",
       views: {
-        'home-tab': {
+        'terms-tab': {
           templateUrl: "templates/warning.html",
+            controller: 'TermsTabCtrl'
         }
       }
     })
   
   // French
-  
     .state('tabs.warningfr', {
       url: "/warningfr",
       views: {
-        'home-tab': {
+        'terms-tab': {
           templateUrl: "templates/fr/warningfr.html",
+            controller: 'TermsTabCtrl'
         }
       }
     })
@@ -161,30 +163,6 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
       }
   })
   
-  // Definitions view
-  
-    .state('tabs.definitions', {
-      
-      url: "/definitions",
-      views: {
-        'home-tab': {
-          templateUrl: "templates/definitions.html",
-        }
-      }
-    })
-  
-  // French
-  
-  .state('tabs.definitionsfr', {
-      
-      url: "/definitionsfr",
-      views: {
-        'home-tab': {
-          templateUrl: "templates/fr/definitionsfr.html",
-        }
-      }
-    })
-  
   // Video list view
    
     .state('tabs.videos', {
@@ -201,9 +179,8 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
     .state('tabs.emergencies', {
       url: "/emergencies",
       views: {
-        'emergencies-tab': {
+        'home-tab': {
           templateUrl: "templates/emergencies.html",
-          controller: 'EmergenciesCtrl'
         }
       }
     })
@@ -213,9 +190,8 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
     .state('tabs.emergenciesfr', {
       url: "/emergenciesfr",
       views: {
-        'emergencies-tab': {
+        'home-tab': {
           templateUrl: "templates/fr/emergenciesfr.html",
-          controller: 'EmergenciesCtrl'
         }
       }
     })
@@ -225,8 +201,9 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
     .state('tabs.asthma',{
       url: "/asthma",
       views: {
-          'emergencies-tab':{
+          'home-tab':{
               templateUrl: "templates/asthma.html",
+              controller: 'HomeTabCtrl'
           }
       }
   })
@@ -236,8 +213,9 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
     .state('tabs.asthmafr',{
       url: "/asthmafr",
       views: {
-          'emergencies-tab':{
+          'home-tab':{
               templateUrl: "templates/fr/asthmafr.html",
+              controller: 'HomeTabCtrl'
           }
       }
   })
@@ -247,7 +225,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
     .state('tabs.bleeding',{
       url: "/bleeding",
       views:{
-          'emergencies-tab':{
+          'home-tab':{
               templateUrl: "templates/bleeding.html",
           }
       }
@@ -258,7 +236,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
   .state('tabs.bleedingfr',{
       url: "/bleedingfr",
       views:{
-          'emergencies-tab':{
+          'home-tab':{
               templateUrl: "templates/fr/bleedingfr.html",
           }
       }
@@ -269,7 +247,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
     .state('tabs.boneandjointinjuries',{
       url: "/boneandjointinjuries",
       views:{
-          'emergencies-tab':{
+          'home-tab':{
               templateUrl: "templates/bonejointinjuries.html",
           }
       }
@@ -280,7 +258,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
     .state('tabs.boneandjointinjuriesfr',{
       url: "/boneandjointinjuriesfr",
       views:{
-          'emergencies-tab':{
+          'home-tab':{
               templateUrl: "templates/fr/bonejointinjuriesfr.html",
           }
       }
@@ -291,7 +269,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
   .state('tabs.breathingemergenciessub',{
       url: "/breathingemergenciessub",
       views: {
-          'emergencies-tab':{
+          'home-tab':{
               templateUrl: "templates/breathingemergenciessub.html",
           }
       }
@@ -302,7 +280,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
   .state('tabs.breathingemergenciessubfr',{
       url: "/breathingemergenciessubfr",
       views: {
-          'emergencies-tab':{
+          'home-tab':{
               templateUrl: "templates/fr/breathingemergenciessubfr.html",
           }
       }
@@ -313,7 +291,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
     .state('tabs.adultchoking', {
       url: "/adultchoking",
       views: {
-        'emergencies-tab': {
+        'home-tab': {
             templateUrl: "templates/adultchoking.html",
             
         }
@@ -325,7 +303,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
     .state('tabs.adultchokingfr', {
       url: "/adultchokingfr",
       views: {
-        'emergencies-tab': {
+        'home-tab': {
             templateUrl: "templates/fr/adultchokingfr.html",
             
         }
@@ -337,7 +315,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
     .state('tabs.infantchoking', {
       url: "/infantchoking",
       views: {
-        'emergencies-tab': {
+        'home-tab': {
             templateUrl: "templates/infantchoking.html",
         }
       }
@@ -348,7 +326,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
     .state('tabs.infantchokingfr', {
       url: "/infantchokingfr",
       views: {
-        'emergencies-tab': {
+        'home-tab': {
             templateUrl: "templates/fr/infantchokingfr.html",
         }
       }
@@ -359,7 +337,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
   .state('tabs.burns',{
       url: "/burns",
       views:{
-          'emergencies-tab':{
+          'home-tab':{
               templateUrl: "templates/burns.html",
           }
       }
@@ -370,7 +348,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
   .state('tabs.burnsfr',{
       url: "/burnsfr",
       views:{
-          'emergencies-tab':{
+          'home-tab':{
               templateUrl: "templates/fr/burnsfr.html",
           }
       }
@@ -381,7 +359,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
   .state('tabs.cpr',{
       url: "/cpr",
       views:{
-          'emergencies-tab':{
+          'home-tab':{
               templateUrl: "templates/cpr.html",
           }
       }
@@ -392,7 +370,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
   .state('tabs.cprfr',{
       url: "/cprfr",
       views:{
-          'emergencies-tab':{
+          'home-tab':{
               templateUrl: "templates/fr/cprfr.html",
           }
       }
@@ -403,7 +381,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
   .state('tabs.diabetes',{
       url: "/diabetes",
       views:{
-          'emergencies-tab':{
+          'home-tab':{
               templateUrl: "templates/diabetes.html",
           }
       }
@@ -414,7 +392,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
   .state('tabs.diabetesfr',{
       url: "/diabetesfr",
       views:{
-          'emergencies-tab':{
+          'home-tab':{
               templateUrl: "templates/fr/diabetesfr.html",
           }
       }
@@ -425,7 +403,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
   .state('tabs.heartattack',{
       url: "/heartattack",
       views:{
-          'emergencies-tab':{
+          'home-tab':{
               templateUrl: "templates/heartattack.html",
           }
       }
@@ -436,7 +414,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
   .state('tabs.heartattackfr',{
       url: "/heartattackfr",
       views:{
-          'emergencies-tab':{
+          'home-tab':{
               templateUrl: "templates/fr/heartattackfr.html",
           }
       }
@@ -447,7 +425,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
   .state('tabs.seizures',{
       url: "/seizures",
       views:{
-          'emergencies-tab':{
+          'home-tab':{
               templateUrl: "templates/seizures.html",
           }
       }
@@ -458,7 +436,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
   .state('tabs.seizuresfr',{
       url: "/seizuresfr",
       views:{
-          'emergencies-tab':{
+          'home-tab':{
               templateUrl: "templates/fr/seizuresfr.html",
           }
       }
@@ -469,7 +447,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
   .state('tabs.severeallergicreactions',{
       url: "/severeallergicreactions",
       views:{
-          'emergencies-tab':{
+          'home-tab':{
               templateUrl: "templates/severeallergicreactions.html",
           }
       }
@@ -480,7 +458,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
   .state('tabs.severeallergicreactionsfr',{
       url: "/severeallergicreactionsfr",
       views:{
-          'emergencies-tab':{
+          'home-tab':{
               templateUrl: "templates/fr/severeallergicreactionsfr.html",
           }
       }
@@ -491,7 +469,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
   .state('tabs.shock',{
       url: "/shock",
       views:{
-          'emergencies-tab':{
+          'home-tab':{
               templateUrl: "templates/shock.html",
           }
       }
@@ -502,7 +480,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
   .state('tabs.shockfr',{
       url: "/shockfr",
       views:{
-          'emergencies-tab':{
+          'home-tab':{
               templateUrl: "templates/fr/shockfr.html",
           }
       }
@@ -513,7 +491,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
   .state('tabs.strokes',{
       url: "/strokes",
       views:{
-          'emergencies-tab':{
+          'home-tab':{
               templateUrl: "templates/strokes.html",
           }
       }
@@ -524,7 +502,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
   .state('tabs.strokesfr',{
       url: "/strokesfr",
       views:{
-          'emergencies-tab':{
+          'home-tab':{
               templateUrl: "templates/fr/strokesfr.html",
           }
       }

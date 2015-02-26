@@ -4,6 +4,14 @@ h2.subtitle {
     font-weight: bold;
 }
 
+.number{
+    color: #669933;
+    font-size: 19px;
+    font-weight: 700;
+    padding-right: 4px;
+    font-family: cursive;
+}
+
 .no-border {
     border: none;
 }
@@ -23,12 +31,19 @@ h2.subtitle {
     color: white !important;
 }
 
+/* Quote styling */
+p.quote{
+    color: #CC0000;
+    font-family: serif;
+    font-style: italic;
+}
+
 
 .card-header-green{
     background-color: #669933;
 }
 
-
+/* image styling */
 .image-card{
     width: 120px;
     height: 120px;
@@ -54,6 +69,7 @@ h2.subtitle {
     
 }
 
+/* Card header in Green */
 .card-divider{
     background-color: #669933;
     color: white;

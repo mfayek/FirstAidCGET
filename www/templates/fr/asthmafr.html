@@ -4,8 +4,8 @@
         
         <div class = "card">
         
-                <div class="item item-thumbnail-left item-text-wrap">
-                    <img src="img/asthmaavatar.PNG">
+                <div class="item item-text-wrap">
+                    <img src="img/asthmaavatar.PNG" class="image-card padding-right padding-bottom" style="float:left;">
                     <p>Le terme «asthme» provient du mot grec qui veut dire «haleter» ce qui décrit
                         bien la personne qui essaie de trouver son souffle. L'asthme se compare aussi
                         a une maladie d'hypersensibilité semblable aux réactions allergiques. On note
@@ -39,7 +39,7 @@
                         </div>
 
                         <div class ="row">
-                            <div class="col"><p>• Peau moite et pâle up</p></div>
+                            <div class="col"><p>• Peau moite et pâle</p></div>
                             <div class="col"><p>• Anxiété et peur</p></div>
                         </div>
                     
@@ -48,50 +48,53 @@
                 </div>
         
         <!-- Astham with without an Inhaler section --> 
-        
+        <a href="" ng-click="jobClick1(showSteps1=!showSteps1)" style="text-decoration: none;">
             <div class = "card" > 
-        
-                <div class="item item-divider item-text-wrap text-center card-divider" ng-init="showSteps1=false">
-                  <a href="" ng-click="showSteps1=!showSteps1"><i class="icon ion-chevron-down white" style="float:left;" ></i></a>Premiers soins(sans la pompe d’asthme)
+                
+                  
+                <div class="item item-divider item-text-wrap text-center card-divider">
+                    <i class="icon ion-chevron-{{arrow}} white" style="float:left;" ></i><span style="color:white;" class="padding-left">Premiers soins(sans la pompe d’asthme)</span>
+                
 
                 </div>
                
                     <div class="item item-text-wrap" ng-show="showSteps1">
 
-                        <p>1. Appelez le 911.</p><br/>
-                        <p>2. Évaluez la personne.</p><br/>
-                        <p>3. Faites asseoir la personne dans une position confortable et rassurez-la.</p><br/>
-                        <p>4. Controlez la respiration.(Faites inspirer la personne par le nez et expirer par la bouche).</p><br/>
-                        <p>5. Traitez l'état de choc.</p><br/>
+                        <p><span class="number">1 </span>Appelez le 911.</p><br/>
+                        <p><span class="number">2 </span>Évaluez la personne.</p><br/>
+                        <p><span class="number">3 </span>Faites asseoir la personne dans une position confortable et rassurez-la.</p><br/>
+                        <p><span class="number">4 </span>Controlez la respiration.(Faites inspirer la personne par le nez et expirer par la bouche).</p><br/>
+                        <p><span class="number">5 </span>Traitez l'état de choc.</p><br/>
                         
                     </div>
-                  
-              
                 
             </div>
-        
+        </a>
         <!-- Astham with Inhaler section --> 
         
+         <a href="" ng-click="jobClick2(showSteps2=!showSteps2)" style="text-decoration: none;">
             <div class = "card">
-        
-                <div class="item item-divider item-text-wrap text-center card-divider" ng-init="showSteps2=false">
-                <a href="" ng-click="showSteps2=!showSteps2"><i class="icon ion-chevron-down white" style="float:left;" ></i></a>Premiers soins (avec la pompe d’asthme)
-
+                
+                
+                <div class="item item-divider item-text-wrap text-center card-divider">
+                    <i class="icon ion-chevron-{{arrow2}} white" style="float:left;" ></i><span style="color:white;">Premiers soins (avec la pompe d’asthme)</span>
+                
                 </div>
                 
                 <div class="item item-text-wrap" ng-show="showSteps2">
                     
                     <img src="img/asthmaavatar1.PNG" class="image-card padding-left padding-bottom" style="float:right;">
-                    <p>1. Secouez l’inhalateur et faites un essai pour expulser les poussières.</p><br/>                    
-                    <p>2. Demandez à la personne d'expirer doucement et complètement.</p><br/>
-                    <p>3. Demandez à la personne de prendre une grande inspiration pendant qu’elle appuit sur l’inhalateur pour administrer le médicament.</p><br/>
+                    <p><span class="number">1 </span>Secouez l’inhalateur et faites un essai pour expulser les poussières.</p><br/>                    
+                    <p><span class="number">2 </span>Demandez à la personne d'expirer doucement et complètement.</p><br/>
+                    <p><span class="number">3 </span>Demandez à la personne de prendre une grande inspiration pendant qu’elle appuit sur l’inhalateur pour administrer le médicament.</p><br/>
                     <img src="img/asthmaavatar2.PNG" class="image-card padding-left padding-bottom" style="float:right;">
-                    <p>4. Si la personne est capable, demander lui de retenir son souffle pendant 5 à 10 secondes pour permettre au médicament de bien s'infiltrer dans les poumons.</p><br/>
-                    <p>5. Si la crise d’asthme continue, appelez le 911.</p>
+                    <p><span class="number">4 </span>Si la personne est capable, demander lui de retenir son souffle pendant 5 à 10 secondes pour permettre au médicament de bien s'infiltrer dans les poumons.</p><br/>
+                    <p><span class="number">5 </span>Si la crise d’asthme continue, appelez le 911.</p>
                 
                 </div>
         
             </div>
+        </a>
         
         
         
