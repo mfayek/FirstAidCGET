@@ -1,13 +1,5 @@
-myApp.controller('TermsTabCtrl', function($ionicHistory){
+myApp.controller('EmergenciesTabCtrl', function($scope, $ionicHistory, $ionicScrollDelegate){
 
-});
-
-myApp.controller('AboutCtrl', function($ionicHistory){
-
-});
-
-myApp.controller('HomeTabCtrl', function($scope,$ionicHistory,$ionicScrollDelegate) {
-    
     $scope.arrow = "down";
     $scope.arrow2 = "down";
     
@@ -41,5 +33,15 @@ myApp.controller('HomeTabCtrl', function($scope,$ionicHistory,$ionicScrollDelega
         }
         
          $ionicScrollDelegate.resize();
-    }      
+    }  
+    
+});
+
+myApp.controller('AboutCtrl', function($ionicHistory){
+
+});
+
+myApp.controller('HomeTabCtrl', function($ionicHistory) {
+    
+        
 });
