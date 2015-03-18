@@ -78,7 +78,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
      .state('tabs.warning', {
       url: "/warning",
       views: {
-        'home-tab': {
+        'about-tab': {
           templateUrl: "templates/warning.html",
         }
       }
@@ -88,7 +88,7 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
     .state('tabs.warningfr', {
       url: "/warningfr",
       views: {
-        'home-tab': {
+        'about-tab': {
           templateUrl: "templates/fr/warningfr.html",
         }
       }
