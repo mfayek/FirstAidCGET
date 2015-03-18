@@ -20,6 +20,7 @@ myApp.run(function ($ionicPlatform) {
 
 myApp.config(function($stateProvider, $urlRouterProvider) {
     
+
   $stateProvider
     .state('tabs', {
       url: "/tab",
@@ -520,15 +521,6 @@ myApp.config(function($stateProvider, $urlRouterProvider) {
       }
   })
   
-  .state('tabs.strokesfrhome',{
-      url: "/strokesfrhome",
-      views:{
-          'home-tab':{
-              templateUrl: "templates/fr/strokesfr.html",
-              controller: "HomeTabCtrl",
-          }
-      }
-  })
   
   // About Tab
     
