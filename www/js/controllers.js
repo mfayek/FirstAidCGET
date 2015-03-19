@@ -42,6 +42,5 @@ myApp.controller('AboutCtrl', function($ionicHistory){
 });
 
 myApp.controller('HomeTabCtrl', function($ionicHistory) {
-    
-        
+               
 });
